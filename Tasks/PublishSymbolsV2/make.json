@@ -1,8 +1,22 @@
 {
   "common": [
     {
-        "module": "../Common/PowershellHelpers",
-        "type": "ps"
+      "module": "../Common/PowershellHelpers",
+      "type": "ps"
+    },
+    {
+      "module": "../Common/utility-common-v2",
+      "type": "node",
+      "dest": "./",
+      "compile": true
+    }
+  ],
+  "rm": [
+    {
+      "items": [
+        "node_modules/utility-common-v2/node_modules/azure-pipelines-task-lib"
+      ],
+      "options": "-Rf"
     }
   ],
   "externals": {
